@@ -1,0 +1,57 @@
+/* Estilos globales */
+
+/* Resetear los estilos predeterminados de los elementos HTML */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Establecer estilos de fuente y tamaño predeterminados */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* Configurar estilos para los enlaces */
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Agregar estilos generales para los títulos */
+h1, h2, h3 {
+  color: #333;
+  font-weight: bold;
+}
+
+/* Configurar estilos para las imágenes */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Establecer estilos de diseño de caja comunes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Agregar estilos generales para los botones */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.button:hover {
+  background-color: #555;
+}
