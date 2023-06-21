@@ -1,19 +1,30 @@
 /* Estilos globales */
 
-/* Estilos predeterminados de los elementos HTML */
+
+/* Estilos predeterminados */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Estilos de fuente y tamaño predeterminados */
-body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
+/* Colores */
+:root {
+  --amarillo: #EAC926;
+  --azul: #0044aa;
+  --celeste: #1259c3;
+  --gris-oscuro: #666;
+  --gris-claro: #828282;
+  --verde: #39b54a;
 }
 
-/* Estilos para los enlaces */
+/* fuente y tamaño predeterminados */
+body {
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* enlaces */
 a {
   color: rgb(0, 0, 0);
   text-decoration: none;
@@ -23,26 +34,26 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Agregar estilos generales para los títulos */
+/* títulos */
 h1, h2, h3 {
   color: #333;
   font-weight: bold;
 }
 
-/* Estilos para las imágenes */
+/* imágenes */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* Establecer estilos de diseño de caja comunes */
+/* diseño de caja comunes */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
 
-/* Estilos generales para los botones */
+/* botones */
 .button {
   display: inline-block;
   padding: 10px 20px;
@@ -54,4 +65,8 @@ img {
 
 .button:hover {
   background-color: #555;
+}
+
+ul{
+  list-style-type: none;
 }

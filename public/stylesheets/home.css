@@ -1,10 +1,117 @@
+/* Estilos del Home */
+
+/* Header */
+
+header {
+  background-color: var(--amarillo);
+}
+
+.logo {
+  width: 60%;
+}
+
+.payment-info {
+  font-size: 90%;
+  text-align: center;
+  padding: 5px;
+  margin: 10px;
+}
+
+
+nav ul {
+  margin-bottom: 5%;
+}
+
+.burger-container {
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+}
+
+.burger-menu {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--azul);
+  cursor: pointer;
+}
+
+.burger-menu i {
+  font-size: 24px;
+  color: white;
+}
+
+.banner {
+  font-size: 0;
+  line-height: 0;
+}
 
 .banner img {
   max-width: 100%;
   height: auto;
 }
 
+/* Main */
+
+main section h2 {
+  font-size: 24px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
 .product img {
   max-width: 100%;
   height: auto;
+}
+
+.product p {
+  margin: 0;
+}
+
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.discount {
+  font-size: 16px;
+  color: var(--verde);
+}
+
+.description {
+  font-size: 16px;
+  color: var(--gris-oscuro);
+}
+
+
+/* Footer */
+
+footer section {
+  text-align: center;
+}
+
+footer section i {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: var(--celeste);
+}
+
+footer section h3 {
+  color: var(--gris-oscuro);
+}
+
+footer section p {
+  color: var(--gris-claro);
 }
