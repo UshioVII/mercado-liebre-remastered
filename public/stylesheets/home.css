@@ -1,13 +1,12 @@
 /* Estilos del Home */
 
 /* Header */
-
 header {
   background-color: var(--amarillo);
 }
 
 .logo {
-  width: 60%;
+  width: 50%;
 }
 
 .payment-info {
@@ -17,8 +16,11 @@ header {
   margin: 10px;
 }
 
+.header-nav {
+  display: none;
+}
 
-nav ul {
+.header-nav ul {
   margin-bottom: 5%;
 }
 
@@ -55,28 +57,57 @@ nav ul {
 }
 
 /* Main */
+main {
+  width: 90%;
+  margin: 0 auto;
+}
 
-main section h2 {
+section {
+  margin-bottom: 10px;
+}
+
+section h2 {
   font-size: 24px;
+  margin: 10px 0 10px 0;
+  color: var(--gris-claro);
 }
 
 .product {
   display: flex;
   flex-direction: column;
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin-bottom: 20px;
+  padding: 15px;
+  background-color: white;
+  margin-bottom: 10px;
 }
 
 .product img {
   max-width: 100%;
   height: auto;
+  border-bottom: 1px solid #ebebeb;
 }
 
 .product p {
   margin: 0;
 }
 
+.circle-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid var(--verde);
+  /* Borde verde */
+  background-color: white;
+  /* Fondo blanco */
+}
+
+.circle-icon i {
+  color: var(--verde);
+  /* Icono verde */
+  font-size: 15px;
+}
 
 .price {
   font-size: 18px;
@@ -95,11 +126,29 @@ main section h2 {
   color: var(--gris-oscuro);
 }
 
+.product .description {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+.product:hover .description {
+  opacity: 1;
+  max-height: 200px;
+}
+
 
 /* Footer */
 
+footer {
+  background-color: white;
+}
+
 footer section {
   text-align: center;
+  padding: 15px;
+  border-top: 1px solid #ebebeb;
 }
 
 footer section i {
@@ -114,4 +163,68 @@ footer section h3 {
 
 footer section p {
   color: var(--gris-claro);
+}
+
+/* Tablet and Little Desktop */
+@media (min-width: 600px) {
+
+  /* Header */
+  .logo {
+    width: 35%;
+  }
+  .payment-info {
+    font-size: 100%;
+  }
+  .header-nav{
+    display: block;
+  }
+  .burger-container{
+    display: none;
+  }
+
+  /* Main */
+  .product {
+    transition: box-shadow 0.3s ease;
+  }
+
+  .product:hover {
+    box-shadow: 0px 1px 6px 1px rgba(0, 0, 0, 0.75);
+  }
+
+  .product .description {
+    opacity: 1;
+    max-height: none;
+    overflow: visible;
+    transition: none;
+  }
+
+  /* Footer */
+}
+
+/* Tablet and Desktop */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  /* Header */
+  .logo {
+    width: 35%;
+  }
+
+  .header-nav{
+    display: block;
+  }
+
+  .burger-container{
+    display: none;
+  }
+
+  /* Main */
+
+  /* Footer */
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .logo {
+    width: 30%;
+  }
 }
